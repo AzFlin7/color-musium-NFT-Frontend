@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  align-items: flex-end;
+}
+.header {
+  color: #fff;
+  font-size: 13rem;
+  line-height: 0.8;
+  margin: 0;
+  font-family: "Plaid";
+}
+.desc {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-family: "Sen", sans-serif;
+  text-align: center;
+  margin: 0;
+  margin-left: 2rem;
+}
+.error {
+  margin: 0 0 -0.6rem 4.75rem;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Plaid";
+}
+@media screen and (max-width: 1000px) {
+  .flex {
+    display: block;
+  }
+
+  .header {
+    font-size: 8rem;
+  }
+  .error {
+    margin: 0 0 -0.3rem 3rem;
+  }
+
+  .desc {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+}

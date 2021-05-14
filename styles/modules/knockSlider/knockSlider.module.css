@@ -1,0 +1,241 @@
+.newSlideContainer {
+  z-index: 1000000 !important;
+}
+
+.newSlideContainer .icon {
+  font-size: 25px;
+  height: 25px;
+  width: 25px !important;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newPurchaseTitle span {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.newPurchaseTitle span::-webkit-scrollbar {
+  display: none;
+}
+
+.newPurchaseTitle {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Plaid-L-Mono";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.newPurchaseTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newPurchaseTitle svg {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newPurchaseTitleGallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(90% + 25px);
+  margin-left: 5px;
+}
+
+.newPurchaseTitleGallery svg {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.content {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+  width: 60px;
+  height: auto;
+}
+
+.mainContainer {
+  display: block;
+  width: 50%;
+  margin-left: 26px;
+  height: 90px;
+}
+
+.mainContainer h3 {
+  font-family: "Plaid" !important;
+  font-style: normal;
+  font-weight: 520;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.mainContainer h3.expiryText {
+  font-family: "Sen" !important;
+  font-weight: 400 !important;
+}
+
+.mainContainer h1 br:first-child {
+  display: none;
+}
+
+.mainContainer h1 {
+  font-family: "Sen" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 10px 0 10px;
+}
+
+.mainContainer p {
+  font-family: "Sen" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.content:first-of-type {
+  padding-top: 1px;
+}
+
+.fromNowContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+.fromNowContainer p {
+  font-family: "Sen" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.fromNowContainer p svg {
+  width: 18px;
+  height: 15px;
+}
+
+.noContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(90vh - 64px - 48px);
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+.noContentWrapper h1 {
+  font-family: "Plaid";
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  width: 100% !important;
+}
+
+.noContentWrapper p {
+  font-family: "Sen";
+  font-size: 0.9rem;
+  color: #fff;
+  margin: 0;
+  width: 100% !important;
+}
+
+
+.noContentWrapper svg {
+  color: #323232;
+  font-size: 15rem;
+  stroke: #323232;
+}
+
+.blockGrid {
+  width: 53px;
+  height: 47px;
+}
+
+
+@media (max-width: 1000px) {
+  .fromNowContainer p {
+    font-size: 10px;
+  }
+
+  .mainContainer h1 br {
+    display: none;
+  }
+
+  .blockGrid {
+    width: 47px;
+    height: 37px;
+  }
+
+  .mainContainer h1 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .mainContainer {
+    height: auto;
+  }
+
+  .mainContainer h3.expiryText {
+    margin-top: 8px;
+  }
+
+  .mainContainer h3 {
+    font-size: 10px;
+  }
+
+  .content {
+    padding: 1rem 0;
+  }
+
+  .newPurchaseTitle {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .mainContainer h1 {
+    margin: 8px 0 0;
+  }
+
+
+  .mainContainer {
+    margin-left: 20px;
+  }
+
+  .blockGrid {
+    width: 40px;
+    height: 35px;
+  }
+
+}

@@ -1,0 +1,133 @@
+.vice_container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.vice_container img {
+  height: 20px;
+  width: auto;
+}
+
+.smallFont {
+  font-size: 16px !important;
+  color: #ffffff;
+  margin-right: 1rem !important;
+  line-height: 1 !important;
+  margin-left: 1.2rem !important;
+  font-family: "Plaid" !important;
+}
+
+.vice_container h1 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-right: 1rem;
+  line-height: 1;
+  margin-left: 1.2rem;
+  font-family: "Plaid";
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.vice_container div:hover {
+  border: 2px solid #00ff0a;
+  color: #00ff0a;
+}
+
+.vice_container div {
+  font-family: "Sen", sans-serif;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  text-transform: uppercase;
+  border: 2px solid white;
+  border-radius: 60px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1200px) {
+  .vice_container h1 {
+    font-size: 14px !important;
+  }
+
+  .vice_container div {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .vice_container h1 {
+    font-size: 12px !important;
+  }
+
+  .vice_container div {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 490px) {
+  .vice_container img {
+    height: 1.3rem;
+    margin-top: 20px;
+  }
+
+  .vice_container h1 {
+    font-size: 1rem !important;
+    margin-right: 1rem !important;
+    margin-left: 1rem !important;
+    margin-top: 18px !important;
+    line-height: 20px !important;
+  }
+
+  .vice_container div {
+    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 490px) and (min-width: 370px) {
+  .vice_container img {
+    height: 0.8rem;
+    margin-top: 16px;
+  }
+
+  .vice_container h1 {
+    font-size: 0.65rem !important;
+    line-height: 15.5px !important;
+    margin-right: 0.65rem !important;
+    margin-left: 0.5rem !important;
+    margin-top: 20px;
+  }
+
+  .vice_container div {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.65rem;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .vice_container img {
+    height: 0.65rem;
+  }
+
+  .vice_container {
+    margin-top: 10px;
+  }
+
+  .vice_container h1 {
+    font-size: 0.65rem !important;
+    line-height: 12.5px !important;
+    margin-right: 0.75rem !important;
+    margin-left: 0.5rem !important;
+  }
+
+  .vice_container div {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.65rem;
+  }
+}

@@ -1,0 +1,65 @@
+.seedMintSection {
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 90%;
+    width: 890px;
+    margin: 0 auto;
+}
+
+.seedMintSection h1 {
+    font-family: 'Plaid';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+
+.seedMintSection p {
+    font-family: 'Plaid';
+    font-style: normal;
+    font-weight: 520;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media (max-width: 1000px) {
+    .seedMintSection .container {
+        max-width: 380px;
+    }
+
+    .seedMintSection h1 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .seedMintSection p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 424px) {
+    .seedMintSection .container {
+        max-width: 280px;
+    }
+
+    .seedMintSection h1 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .seedMintSection p {
+        font-size: 8px;
+        line-height: 10px;
+    }
+}

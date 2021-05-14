@@ -1,0 +1,1 @@
+export const COLOR_NFT_FEES = 5.0;

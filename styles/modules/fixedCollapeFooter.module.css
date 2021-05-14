@@ -1,0 +1,445 @@
+
+
+.stickyCollapeMain {
+  width: calc(100% - 2vw);
+  margin: 0 auto;
+}
+
+.fixedCollapeFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #181818;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px;
+  width: calc(100% - 2vw - 20px);
+  margin: 0 auto;
+  border: 0 solid #272727;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  z-index: 99;
+  transition: all 0.5s;
+}
+
+.topPart {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 9 !important;
+  height: 75px;
+  box-shadow: 0 6px 5px -6px black;
+  transition: all 0.5s;
+}
+
+.topPart.active {
+  height: 100%;
+}
+
+.fixedCollapeFooter.active {
+  padding: 80px 0;
+  background: #181818;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-color: #272727;
+  max-height: 60vh;
+  z-index: 9999 !important;
+}
+
+.fixedCollapeFooter.activeHome {
+  padding: 80px 0;
+  background: #181818;
+  border-width: 5px 0px;
+  border-style: solid;
+  border-bottom: 0;
+  max-height: 60vh;
+  z-index: 9 !important;
+}
+
+.expandText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.expandText h1 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.expandText h2 {
+  font-family: "Plaid-L-Mono";
+  font-style: normal;
+  font-weight: 662;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.collapeIcon svg {
+  width: 40px;
+  height: 43px;
+}
+
+.toastComman {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.active .collapeIcon {
+  top: 20px;
+  transform: none;
+  border: 0;
+  right: 20px;
+}
+
+.collapeIcon {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translate(50%, -50%);
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #272727;
+}
+
+.openFixedCollpe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20%;
+  padding: 0 100px 0 0;
+  width: calc(90% - 80px);
+  margin: 0 auto;
+}
+
+.openFixedCollpe h2 {
+  font-family: "Plaid-L-Mono" !important;
+  font-style: normal;
+  font-weight: 662;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.openFixedCollpe .leftContent {
+  max-width: 40%;
+}
+
+.openFixedCollpe .rightContent {
+  width: 50%;
+}
+
+.innerLeftContent {
+  max-width: 470px;
+}
+
+.openFixedCollpe h1 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 43px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.openFixedCollpe .rightContent p {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.openFixedCollpe .leftContent p {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #ffffff;
+  margin: 0 0 15px;
+  max-width: 370px;
+}
+
+.newCreateLoginAccount label {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.newCreateLoginAccount input {
+  border: 0 solid #fff;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  padding: 24px 20px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  height: 64px;
+  background-color: #100f0f;
+  width: 50%;
+}
+
+.newCreateLoginAccount input:focus-visible {
+  outline: none;
+}
+
+.newCreateLoginAccount input::-webkit-outer-spin-button,
+.newCreateLoginAccount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.newCreateLoginAccount input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.newCreateLoginAccount input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* 
+.newCreateLoginAccount .loadButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
+
+.newWhiteButton {
+  background: #ffffff;
+  border-radius: 0 4px 4px 0;
+  height: 64px;
+  font-family: "Plaid-L-Mono";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 24px 50px;
+  cursor: pointer;
+  transition: 300ms ease;
+  border: 0;
+  outline: 0;
+  border: 2px solid #000000;
+  border-radius: 0 4px 4px 0;
+  margin: 0;
+  /* width: 60%; */
+  position: relative;
+}
+
+.newWhiteButton .puffLoader {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 12px;
+  height: 30px;
+}
+
+.newWhiteButton:hover,
+.newWhiteButtonAdd:hover {
+  background: #000;
+  color: #fff;
+}
+
+.inputAndButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1499px) {
+  .openFixedCollpe {
+    width: calc(100% - 100px);
+  }
+
+  .openFixedCollpe {
+    gap: 5%;
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .stickyCollapeMain {
+    width: 100%;
+  }
+
+  .mobileHeigth {
+    min-height: 65vh !important;
+  }
+
+  .mobileCollapeIcon {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+
+  .expandText {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: calc(90% - 10px);
+    margin: 0 auto;
+  }
+
+  .fixedCollapeFooter {
+    padding: 15px 0;
+    justify-content: flex-start;
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 5px;
+    height: 100px;
+  }
+
+  .expandText h2 {
+    font-size: 10px;
+  }
+
+  .expandText h1 {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 220px;
+  }
+
+  .collapeIcon svg {
+    width: 30px;
+    width: 30px;
+  }
+
+  .collapeIcon {
+    border: 0;
+    right: 15px;
+  }
+
+  .openFixedCollpe {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    width: 90% !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .openFixedCollpe .leftContent {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .openFixedCollpe p {
+    font-size: 12px;
+    max-width: 280px;
+  }
+
+  .openFixedCollpe .rightContent {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .openFixedCollpe h2 {
+    font-size: 12px;
+  }
+
+  .openFixedCollpe h2 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .fixedCollapeFooter.active {
+    padding: 30px 0 60px;
+    z-index: 99999;
+    max-height: inherit;
+    height: inherit;
+    overflow-y: auto;
+  }
+
+  .fixedCollapeFooter.activeHome {
+    padding: 40px 0;
+    z-index: 99999;
+    max-height: 100%;
+    height: 100%;
+  }
+
+  .openFixedCollpe h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .newWhiteButton {
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .active .collapeIcon {
+    right: 0px;
+  }
+
+  .innerLeftContent {
+    max-width: 260px;
+  }
+
+  .newCreateLoginAccount input {
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .inputAndButton {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .active .collapeIcon {
+    top: 0;
+  }
+
+  .openFixedCollpe .leftContent p {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  .active .collapeIcon {
+    top: 0;
+  }
+}

@@ -1,0 +1,1060 @@
+.InputIcon {
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 21%;
+  right: 10px;
+  z-index: 10;
+}
+
+.newSlideContainer {
+  z-index: 1000000 !important;
+}
+
+.newSlideContainer .icon {
+  font-size: 25px;
+  height: 25px;
+  width: 25px !important;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contentTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 30px;
+  /* flex-direction: column; */
+}
+
+.contentTitle span {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-top: 2px;
+}
+
+.newPurchaseTitle span {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.newPurchaseTitle span::-webkit-scrollbar {
+  display: none;
+}
+
+.newPurchaseTitle span,
+.newPurchaseTitle {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Plaid-L-Mono";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.newPurchaseTitleGallery span {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.newPurchaseTitlGallery span::-webkit-scrollbar {
+  display: none;
+}
+
+.newPurchaseTitleGallery span,
+.newPurchaseTitleGallery {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Plaid-L-Mono";
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.breadcrumb svg {
+  stroke: #fff;
+  margin: 0 5px;
+  font-size: 1.2rem !important;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Plaid";
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.newPurchaseTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.newPurchaseTitle svg {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newPurchaseTitleGallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(90% + 25px);
+  margin-left: 5px;
+}
+
+.newPurchaseTitleGallery svg {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.newDesignHeader {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 32px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.fontNewDesign {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  opacity: 0.6;
+  margin: 0;
+}
+
+.sideContetLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.newWhiteButton {
+  background: #ffffff;
+  border-radius: 4px;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+  width: 100%;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 0;
+  outline: 0;
+  border: 2px solid #fff;
+}
+
+.newWhiteButton:hover,
+.newWhiteButtonAdd:hover {
+  background: #000;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.newWhiteButtonAdd {
+  background: #ffffff;
+  border-radius: 4px;
+  width: 100%;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  cursor: pointer;
+  transition: 300ms ease;
+  border: 0;
+  outline: 0;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+}
+
+.newBorderButton {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 64px;
+  width: 100%;
+  background: transparent;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 300ms ease;
+}
+
+.newBorderButton:hover {
+  background: #fff;
+  color: #000;
+}
+
+.textDes {
+  margin: 30px 0;
+  max-width: 70%;
+}
+
+.textDes p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Plaid-L-Mono";
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.textDes.lightSection {
+  opacity: 0.5;
+}
+
+.lightSection .iconClose {
+  margin: 20px 0 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.textDes.lightSection {
+  margin-top: 20px;
+}
+
+.textDes.lightSection p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  font-family: "Plaid-L-Mono";
+  font-weight: 400;
+}
+
+.textDes.lightSection p:nth-child(3) {
+  max-width: 280px !important;
+}
+
+.textDes p:nth-child(2) {
+  font-size: 15px;
+}
+
+.emailLoaderContainer {
+  background: #ffffff10;
+  border-radius: 4px;
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff !important;
+}
+
+.emailLoaderContainer span {
+  border-color: #fff;
+}
+
+.emailLoaderContainer span span:first-of-type {
+  background-color: #fff;
+}
+
+.emailLoaderContainer h4 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin: 16px 0 0;
+}
+
+.verificationContainer {
+  background: #ffffff10;
+  border-radius: 4px;
+  width: 100%;
+  height: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.verificationContainer svg {
+  height: 19px;
+  width: 27px;
+}
+
+.verificationContainer h4 {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin: 16px 0 20px;
+}
+
+.verificationContainerLine {
+  opacity: 0.12;
+  border: 1px solid #ffffff;
+  width: 75%;
+}
+
+.verificationContainer p {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.6;
+  width: 30%;
+  margin: 24px 0;
+}
+
+.verificationContainer h3 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+.approved {
+  color: #00ff0a;
+}
+
+.newDesignFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subFont {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  opacity: 0.6;
+  margin: 0 0 16px;
+}
+
+.offerLine {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff20;
+  margin: 40px 0 20px;
+}
+
+.newCreateLoginAccount {
+  position: relative;
+  display: grid;
+  margin-bottom: 46px;
+}
+
+.newCreateLoginAccount p b {
+  font-weight: 700;
+}
+
+.newCreateLoginAccount p {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.otpInput {
+  margin-right: 20px;
+}
+
+.otpInput input {
+  padding: 0px !important;
+  width: 68px !important;
+  height: 89px !important;
+  font-family: "Plaid" !important;
+  font-size: 60px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  border: 2px solid #fff !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+}
+
+.formDesc {
+  margin-bottom: 30px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.inputCodeTitle {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.newCreateLoginAccount label {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.newCreateLoginAccount input {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 24px 20px;
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ffffff;
+  height: 64px;
+  background-color: #100f0f;
+}
+
+.newCreateLoginAccount input::-webkit-outer-spin-button,
+.newCreateLoginAccount input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.newCreateLoginAccount input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.newCreateLoginAccount input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.newCreateLoginAccount button {
+  margin-top: 20px;
+}
+
+.newCreateLoginAccount .loadButton {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.otpForm .otpButtonList {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.otpForm button {
+  max-width: 200px;
+  margin-bottom: 18px;
+  margin-top: 0 !important;
+  /* padding: 24px 25px !important; */
+}
+
+.switchList {
+  margin-top: 113px;
+}
+
+.switchListTitle {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.switchItem {
+  margin: 12px 0;
+}
+
+.switchItem label {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.switchItem .react_witch {
+  margin-right: 15px;
+}
+
+.switchItem p {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.leftSmallButton button {
+  max-width: 140px;
+  opacity: 0.5;
+}
+
+.leftSmallButton button:hover {
+  opacity: 1;
+}
+
+.buttonWalletConnect:hover {
+  border: 2px solid #fff;
+}
+
+.buttonWalletConnect {
+  border: 2px solid #555555;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #100f0f;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttonWalletConnect img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.buttonWalletConnect span {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.approvenTokenNewButton {
+  border: 2px solid #555555;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 260px;
+  height: 64px;
+  padding: 20px;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  background-color: #100f0f;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #ffffff;
+}
+
+.approvenTokenNewButton:hover {
+  border: 2px solid #fff;
+}
+
+.makeOfferForm {
+  display: grid;
+  position: relative;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.makeOfferForm label {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.makeOfferForm input {
+  border: 2px solid #292929;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #100f0f;
+  width: 100%;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ffffff;
+  height: 56px;
+}
+
+.makeOfferForm input:last-of-type {
+  padding: 20px 20px 20px 140px;
+}
+
+.makeOfferForm input::-webkit-outer-spin-button,
+.makeOfferForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.makeOfferForm input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.usd {
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  color: #fff;
+  width: 24px !important;
+  height: 30px !important;
+}
+
+.selectValueDropdown {
+  position: absolute;
+  bottom: calc((56px - 35px) / 2);
+  right: 15px;
+  width: auto;
+  height: 33px;
+}
+
+.selectValueDropdown button {
+  width: 60px;
+  justify-content: space-between;
+  padding: 2px 10px 2px 15px;
+}
+
+.selectValueDropdownLeft {
+  position: absolute;
+  bottom: calc((56px - 35px) / 2);
+  right: 15px;
+  width: 100px;
+  height: 33px;
+}
+
+.selectValueDropdownLeft button {
+  width: 75px;
+  justify-content: space-between;
+  padding: 2px 10px 2px 15px;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.flexContainer h1 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.flexContainer h3 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 500;
+  margin-left: 1rem;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.priceDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.priceDiv .whiteCircle {
+  margin: 0;
+}
+
+.priceDiv h3 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 20px !important;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+.priceDiv h2 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 38px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+.greenCircle {
+  width: 15px;
+  height: 15px;
+  background: #47ff4f;
+  border-radius: 5.5px;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+  animation: heartbeat 1s infinite;
+  max-width: 15px;
+  min-width: 15px;
+}
+
+.fundTitle {
+  font-family: "Plaid";
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.fundListTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 2.5em;
+}
+
+.fundListTitle h3 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-top: 5px !important;
+}
+
+.fundListTitle h2 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 520;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.ethValue {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  margin: 0;
+}
+
+.ethValueEth {
+  margin: 0;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px !important;
+}
+
+.coinbasePay img {
+  width: 70%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.coinbasePay {
+  /* font-size: 0; */
+  background: transparent;
+  color: #fff;
+  padding: 0;
+  border-radius: 0;
+  margin-top: 1.3rem;
+  cursor: pointer;
+  margin-bottom: 2.5rem;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: none;
+  text-align: left;
+}
+
+.itemsCollection {
+  font-family: "Sen", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.itemsTitle {
+  margin: 0 0.5rem 0 0;
+}
+
+.whiteCircle {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  min-height: 8px;
+  background: #fff;
+  margin: 0 0.5rem;
+  border-radius: 3.5px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.imageGrid {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.viewButton {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.disconnectButton:hover {
+  border-color: #fff;
+}
+
+.disconnectButton {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #555555;
+  border-radius: 4px;
+  padding: 12px 16px;
+  background: transparent;
+  color: #fff;
+  width: calc(18 * 10px);
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.flexContent {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+
+.flexContent .flexContent {
+  justify-content: end;
+}
+
+.flexContent p {
+  font-family: "Plaid";
+  width: 120px;
+}
+
+@media (max-width: 1000px) {
+  .newPurchaseTitle span {
+    max-width: 500px;
+    overflow: auto;
+  }
+
+  .makeOfferForm {
+    width: 100%;
+  }
+
+  .flexContainer h1 {
+    font-size: 20px !important;
+  }
+
+  .flexContainer h3 {
+    margin-left: 8px !important;
+    margin-bottom: 8px !important;
+  }
+}
+
+.expireText {
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Sen", sans-serif;
+}
+
+.hours {
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Plaid";
+}
+
+/* animation  */
+@keyframes inAnimation {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes outAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.75);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.75);
+  }
+
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.enableCurrency {
+  width: 75%;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: "Plaid-L-Mono";
+  font-weight: 400;
+  margin: 0 0 1.75rem;
+}
+
+.mobileOnly {
+  display: none;
+}
+
+.mobileOnly h2 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 662;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 2rem 0 0.25rem;
+}
+
+.mobileOnly p {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobileOnly {
+    display: block;
+  }
+}

@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.smallCube {
+  height: 70vh;
+}
+
+.textLeft {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  color: white;
+  z-index: 10;
+  font-size: 60px;
+}
+
+.textLeft .cardContainer {
+  width: 300px;
+}
+
+.textRight {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  color: white;
+  z-index: 10;
+  font-size: 30px;
+}
+
+@media (max-width: 1000px) {
+  .smallCube {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textLeft {
+    font-size: 24px;
+  }
+
+  .textLeft .cardContainer {
+    width: 200px;
+  }
+
+  .textRight {
+    font-size: 14px;
+  }
+}

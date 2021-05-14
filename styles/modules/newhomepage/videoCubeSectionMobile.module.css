@@ -1,0 +1,584 @@
+.container {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding: 0;
+  width: calc(100% - 20px);
+  /* width: 85%; */
+  margin: 0 auto 0;
+  z-index: 222;
+  position: relative;
+  background: #000;
+}
+
+.borderWhiteButton:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.borderWhiteButton {
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 12px 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+/* .whiteButton:hover {
+  opacity: 0.8;
+} */
+/* .whiteButton span {
+  font-family: 'Plaid-M';
+} */
+
+.whiteButton {
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #000000;
+  padding: 18px 15px;
+  border: 0;
+  background: #FFFFFF;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greenButton:hover {
+  background-color: #00FF0A;
+  color: #000;
+}
+
+.greenButton {
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #00FF0A;
+  padding: 12px 15px;
+  border: 1px solid #00FF0A;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.videoPart {
+  /* padding-top: 2px; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 30px 0 50px;
+  /* margin-top: 30px; */
+}
+
+.videoPart .topPart {
+  width: 160%;
+  position: absolute;
+  z-index: 0;
+  top: 20px;
+  left: 16%;
+}
+
+.videoPart .bottomPart {
+  width: calc(85% + 40px);
+  margin: 40% auto 0;
+  z-index: 11;
+}
+
+.videoPart .bottomPart button {
+  margin-top: 20px;
+}
+
+.videoPart .bottomPart h2 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 660;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 290px;
+  margin: 0;
+}
+
+
+/* logos */
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(calc(-150px * 8));
+  }
+}
+
+
+.logos {
+  width: calc(85% + 40px);
+  margin: 0 auto;
+  padding: 0 0 30px;
+}
+
+.logoSliderCss {
+  width: calc(150px * 16);
+  display: flex;
+  animation: scroll 10s linear infinite;
+  justify-content: space-between;
+}
+
+.logoSliderCss:hover {
+  animation-play-state: paused;
+}
+
+.logos .logoInner a {
+  display: inline-block;
+  white-space: nowrap;
+  width: 150px;
+}
+
+.logos .logoInner {
+  overflow: hidden;
+}
+
+.logos .logoInner img {
+  height: 25px;
+  width: 100px;
+}
+
+/* .logos .logoInner a:last-child {
+  margin-right: 0;
+}
+
+
+.logos .logoInner a:first-child {
+  margin-left: 0;
+} */
+.logos .logoInner a:last-child {
+  opacity: 0.7;
+}
+
+.logos .logoInner a {
+  margin: 0 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* .logos .logoInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* dropPart */
+.dropContainer {
+  background-color: #000;
+  background: #171717;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 0;
+  border-right: 0;
+}
+
+.dropPart {
+  width: calc(85% + 20px);
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropPart h2 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 660;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.rundCounter {
+  width: 35px;
+  height: 35px;
+  min-height: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #242424;
+  border: 1px solid rgba(133, 133, 133, 0.3);
+}
+
+.dropPart h4 {
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #B0B0B0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+/* genesisPart */
+.genesisPart {
+  width: calc(85% + 40px);
+  margin: 0 auto;
+  color: #fff;
+  padding: 50px 0 0;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.flexContent {
+  display: flex;
+  color: #fff;
+  align-items: center;
+}
+
+
+.flexContent h3 {
+  font-family: "Plaid-M";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 8px 0 0;
+}
+
+.flexContent h4 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.flexContent h1 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 10px 0rem 10px 0;
+}
+
+
+.liveEthereum {
+  font-family: "Plaid-M";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.liveEthereum a {
+  margin-left: 0.25rem;
+  height: 1em;
+  width: 1em;
+  padding-top: 1px;
+}
+
+/* postPart */
+.postPart {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postPart .borderWhiteButton {
+  font-size: 10px;
+  padding: 10px;
+}
+
+.postPart h5 {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+/* mintPart */
+.mintPartMain {
+  width: 110%;
+  padding: 40px 5% 10px;
+  background-color: #100f0f;
+  margin: 0 -5%;
+}
+
+.mintPart {
+  max-width: 290px;
+}
+
+.mintPart h1 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.mintPart .firstContent {
+  margin-bottom: 20px;
+}
+
+.separate {
+  margin-bottom: 40px;
+}
+
+.mintPart button {
+  margin: 20px 0 10px;
+}
+
+.yieldText {
+  max-width: 280px;
+}
+
+.mintPart h2 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0 0 5px;
+}
+
+.mintPart p {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+}
+
+
+/* formDiv */
+.formDiv {
+  margin: 0 -7%;
+  background-color: #fff;
+}
+
+.innerFormDiv {
+  max-width: 420px;
+  padding: 50px 6%;
+}
+
+.formDiv h1 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 660;
+  font-size: 25px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 5px;
+}
+
+.formDiv h2 {
+  font-family: 'Plaid-M';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000;
+  margin: 0;
+}
+
+.peopleText {
+  padding: 20px 0 25px;
+}
+
+.peopleText h2 span {
+  font-family: 'Plaid-M';
+  font-style: normal;
+  font-weight: 520;
+  font-size: 15px;
+  line-height: 120%;
+  color: #000;
+  max-width: 100px;
+  padding-bottom: 7px;
+  text-transform: none;
+}
+
+.peopleText h2 {
+  font-family: 'Plaid';
+  font-style: normal;
+  font-weight: 660;
+  font-size: 45px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000;
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+
+.registerForm input {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #ffffff;
+  height: 55px;
+  background-color: #100f0f;
+  width: 100%;
+  text-align: center;
+}
+
+.registerForm button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.registerForm button {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'Plaid-L-Mono';
+  font-size: 12px;
+  line-height: 120%;
+  border-radius: 0 4px 4px 0;
+  border-color: #000;
+  color: #000;
+}
+
+.registerForm input:focus {
+  outline: none;
+}
+
+.registerForm input::-webkit-outer-spin-button,
+.registerForm input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.registerForm input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.registerForm input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 420px) {
+  .videoPart .bottomPart h2 {
+    font-size: 34px;
+    max-width: 250px;
+  }
+
+  .borderWhiteButton {
+    font-size: 10px;
+  }
+
+  .dropPart h2 {
+    font-size: 15px;
+  }
+
+  .flexContent h1 {
+    font-size: 40px;
+  }
+
+  .dropPart h4 {
+    font-size: 12px;
+  }
+
+  .postPart .borderWhiteButton {
+    padding: 10px 5px;
+  }
+
+  .formDiv h2 {
+    font-size: 15px
+  }
+
+  .peopleText h2 {
+    font-size: 40px;
+  }
+
+  .formDiv h1 {
+    font-size: 22px;
+  }
+
+  .registerForm input {
+    font-size: 12px;
+  }
+
+  .registerForm button {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .postPart h5 {
+    font-size: 12px;
+  }
+
+  .whiteButton {
+    padding: 12px 8px;
+  }
+}

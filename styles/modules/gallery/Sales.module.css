@@ -1,0 +1,629 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.dateFontSize {
+  font-size: 20px !important;
+}
+
+.tableDiv tr:first-child td {
+  animation: blink 1s linear infinite;
+}
+
+.tableTopText {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 25px;
+}
+
+.tableTopText h2 {
+  font-family: "Plaid";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+.tableTopText h3 {
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* table valuye */
+.tableColorDiv {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.tablePriceDiv p {
+  text-transform: uppercase;
+  font-family: "Plaid";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px !important;
+  line-height: 20px !important;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.tablePriceDiv p span {
+  font-family: "Plaid";
+}
+
+.tablePriceDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tablePriceDiv img {
+  max-width: 23px;
+  pointer-events: none;
+}
+
+.tablePriceETH img {
+  max-width: 30px;
+  pointer-events: none;
+}
+
+.tablePriceETH {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.tableBuyerDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.tableBuyerDiv p {
+  font-size: 20px !important;
+}
+
+.tableLink img {
+  max-width: 15px;
+}
+
+.tableLink {
+  cursor: pointer;
+}
+
+.tablePuffLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.tableMainDiv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  height: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+/* width */
+.tableMainDiv::-webkit-scrollbar {
+  width: 0;
+}
+
+.tableMainDiv table thead {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #000;
+}
+
+.tableMainDiv table tbody {
+  overflow-y: scroll;
+}
+
+/* .tableNameDiv p {
+    text-transform: uppercase;
+} */
+.tableNameDiv p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hexadecimal {
+  text-transform: uppercase;
+}
+
+.tableBuyerDiv .userAvtarBg {
+  width: 30px;
+  height: 30px;
+  max-height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.tableBuyerDiv .userAvtarBg .Id {
+  opacity: 0.4 !important;
+  text-transform: uppercase;
+}
+
+.backgroundColor {
+  width: 62px;
+  height: 62px;
+}
+
+/* hide show */
+.tableHeaderMobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 15px 10px 0;
+  /* position: sticky; */
+  top: 0;
+  left: 0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #100f0f;
+  /* border-bottom: 1px solid #1e1e1e; */
+}
+
+.headerContentMobile {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sen" !important;
+  font-weight: 400;
+  font-display: swap;
+  margin: 0;
+}
+
+.alignRight {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.headerContentMobileFirst,
+.contentMobileFirst {
+  width: 30%;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sen" !important;
+  font-weight: 500;
+  font-display: swap;
+  margin: 0;
+}
+
+.headerContentMobileThird,
+.contentMobileThird {
+  width: 15%;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sen" !important;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  font-display: swap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.headerContentMobileFour,
+.contentMobileFour {
+  width: 30%;
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sen" !important;
+  font-weight: 500;
+  font-display: swap;
+  margin: 0;
+  text-align: end;
+}
+
+.contentDataMobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  /* background: #000; */
+  transition: all 300ms ease;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  /* border-radius: 10px; */
+}
+
+.contentDataMobile.contentDataBottomRow {
+  padding-top: 0;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.contentDataBottomRow .soldByDiv {
+  display: flex;
+  align-items: center;
+}
+
+.contentCenter {
+  display: flex;
+  align-items: center;
+}
+
+.contentCenterGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.7fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+}
+
+.colorBoxText p {
+  font-size: 13px !important;
+  text-transform: uppercase !important;
+}
+
+.contentCenter h5,
+.contentCenter p,
+.contentCenterGrid h5,
+.contentCenterGrid p {
+  font-size: 14px;
+  color: #fff;
+  font-family: "Sen";
+  font-weight: 500;
+  font-display: swap;
+  margin: 0;
+}
+
+.priceFontSize,
+.priceExpiry {
+  font-size: 13px !important;
+  color: #fff;
+  font-family: "Sen" !important;
+  font-weight: 500;
+  font-display: swap;
+  margin: 0 !important;
+}
+
+.priceExpiry {
+  font-size: 10px !important;
+}
+
+.contentDataMobile.contentDataBids {
+  align-items: center;
+}
+
+/* first  */
+.headerContentMobileFirst {
+  display: flex;
+  align-items: center;
+}
+
+.headerContentMobileFirst .innerSecound {
+  margin-left: 14px;
+}
+
+.contentMobileFirst .mobileContent0x {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 10px;
+  margin-bottom: 2px;
+}
+
+.contentMobileFirst .mobileFirstSoldBy {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.contentDataBottomRow .onlineDot {
+  width: 20px;
+  height: 20px;
+}
+
+.onlineDot {
+  width: 25px;
+  height: 25px;
+  background-color: #272727;
+  border-radius: 50%;
+  min-width: 15px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.onlineDotDiv p {
+  font-size: 12px !important;
+}
+
+.contentMobileFirst .colorName {
+  margin-left: 14px;
+}
+
+.contentMobileFirst .colorNameDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.contentDataBids .contentMobileFirst .colorNameDiv {
+  margin-bottom: 0;
+}
+
+.contentMobileFirst .expireText {
+  font-size: 10px;
+}
+
+.colorBox {
+  width: 40px;
+  height: 37px;
+  background-color: red;
+  margin-right: 10px;
+}
+
+/* secound */
+
+/* third */
+.contentMobileThird .mobileGreenIcon {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.mobileGreenIcon span {
+  color: #05b927;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.contentMobileThird .mobileGreenIcon svg {
+  color: #05b927;
+  font-size: 14px;
+}
+
+.contentMobileThird .mobileContent0x {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.contentMobileThird .onlineDot {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  min-width: 8px;
+  margin: 0 3px;
+}
+
+/* four */
+.contentMobileFour .mobileContent0x {
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.contentMobileFour .onlineDot {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  min-width: 8px;
+  margin-right: 3px;
+}
+
+.contentMobileFour .mobileLink {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.contentCenter a {
+  display: flex;
+  align-items: center;
+}
+
+.contentDate p {
+  font-size: 8px !important;
+  align-items: flex-end;
+}
+
+.contentCenter img {
+  max-width: 6px;
+  margin-left: 5px;
+}
+
+.onMobile {
+  /* margin-bottom: 15px; */
+  display: none;
+  background: #100f0f;
+  border-top: 1px solid #333333;
+  /* border-radius: 8px; */
+  padding: 0 0 10px;
+}
+
+.onMobile:last-child {
+  border-bottom: 1px solid #333333;
+}
+
+.emptyText {
+  width: 100%;
+  margin: 150px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.emptyText h2 {
+  font-size: 25px;
+  font-family: 'Plaid-M';
+  font-weight: 400;
+  margin-left: 10px;
+}
+@media (max-width: 1450px) {
+  .tablePriceDiv p {
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .emptyText {
+    margin: 50px auto 0;
+    font-size: 20px;
+  }
+
+  .emptyText h2 {
+    font-size: 22px;
+  }
+
+
+  /* hide show */
+  .onDesktop {
+    display: none;
+  }
+
+  .onMobile {
+    display: block;
+  }
+
+  .tableTopText h2 {
+    font-size: 25px;
+  }
+
+  .backgroundColor {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tableTopText h3 {
+    font-size: 15px;
+  }
+
+  .tableColorDiv {
+    gap: 10px;
+  }
+
+  .tablePriceDiv {
+    gap: 10px;
+  }
+
+  .tableMainDiv {
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .tablePriceDiv p {
+    font-size: 10px !important;
+  }
+
+  .dateFontSize {
+    font-size: 11px !important;
+  }
+
+  .tableLink img {
+    max-width: 7px;
+  }
+}
+
+@media (max-width: 380px) {
+  .contentMobileThird .mobileContent0x {
+    font-size: 8px;
+  }
+
+  .contentDataMobile {
+    padding: 10px;
+  }
+
+  .priceFontSize {
+    font-size: 10px !important;
+  }
+
+  .priceExpiry {
+    font-size: 8px !important;
+  }
+
+  .headerContentMobileFirst,
+  .contentMobileFirst {
+    font-size: 10px;
+  }
+
+  .headerContentMobileThird,
+  .contentMobileThird {
+    font-size: 10px;
+  }
+
+  .headerContentMobileFour,
+  .contentMobileFour {
+    font-size: 10px;
+  }
+
+  .mobileGreenIcon span {
+    font-size: 10px;
+  }
+
+  .contentMobileThird .mobileGreenIcon svg {
+    font-size: 10px;
+  }
+
+  .colorBox {
+    margin-right: 5px;
+    width: 30px;
+    height: 27px;
+  }
+
+  .contentMobileFour .mobileContent0x {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+}

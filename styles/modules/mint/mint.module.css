@@ -1,0 +1,81 @@
+.walletContainer {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 20px;
+  margin: 0 0 20px;
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 300ms;
+  text-transform: uppercase;
+}
+
+.toastComman {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.walletContainer:hover {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+}
+
+.walletContainer h4 {
+  font-weight: 100;
+  margin: 10px 0;
+  white-space: nowrap;
+}
+
+.walletContainer img {
+  height: 30px;
+  align-content: center;
+  margin-right: 2vh;
+}
+
+.disconnectButton {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 35px;
+  margin: 20px 0 20px;
+  font-family: 'Plaid-L-Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 300ms;
+  text-transform: uppercase;
+}
+
+.disconnectButton:hover {
+  background: #000;
+  border: 2px solid #000;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .disconnectButton {
+    font-size: 18px;
+  }
+
+  .gasContainer.hideMobile {
+    display: none;
+  }
+}
